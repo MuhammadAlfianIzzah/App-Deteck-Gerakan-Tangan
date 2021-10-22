@@ -1,0 +1,85 @@
+   body {
+       margin: 0;
+       padding: 0;
+       height: 500vh;
+       overflow: hidden;
+   }
+
+   video#video {
+       width: 100%;
+       object-fit: cover;
+       opacity: .7;
+       border: 2px solid rgba(255, 255, 255, .4);
+       height: 200px;
+       transform: rotateY(180deg);
+   }
+
+   .videoplay {
+       opacity: .8;
+       /* display: none; */
+       top: 0;
+       left: 0;
+       z-index: 8888;
+       position: absolute;
+       width: 100vw;
+       height: 100vh;
+       object-fit: cover;
+
+   }
+
+   .card {
+       transition: all 400ms ease;
+       /* transform: translateX(100%); */
+   }
+
+   .tombol {
+       display: flex;
+       justify-content: center;
+   }
+
+   .panel-control {
+       padding: 20px;
+       position: absolute;
+       z-index: 9999;
+       bottom: 40px;
+       width: 700px;
+       left: 50%;
+       border: 2px solid rgba(255, 255, 255, .4);
+       transform: translateX(-50%);
+       display: flex;
+       justify-content: space-evenly;
+   }
+
+   .restart {
+       transition: all 400ms ease;
+   }
+
+   .restart:hover {
+       transform: rotate(45deg);
+   }
+
+   .restart.active {
+       transform: rotate(45deg);
+   }
+
+   .panel-control i {
+       color: white;
+       cursor: pointer;
+       font-size: 2em;
+   }
+
+   .ct-petunjuk {
+       position: absolute;
+       top: 40px;
+       left: 20px;
+       z-index: 9999;
+   }
+
+   .petunjuk {
+       border-radius: 20px !important;
+       background: rgba(255, 255, 255, 0.25) !important;
+       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+       backdrop-filter: blur(4px) !important;
+       -webkit-backdrop-filter: blur(4px);
+       /* border-radius: 10px; */
+   }

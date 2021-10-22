@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 500vh;
+  overflow: hidden;
+}
+
+video#video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: .7;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  height: 200px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.videoplay {
+  opacity: .8;
+  /* display: none; */
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  overflow: hidden;
+  border: 2px solid white;
+  -webkit-box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border-radius: 10px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  /* transform: translateX(100%); */
+}
+
+.panel-control {
+  padding: 20px;
+  position: absolute;
+  z-index: 9999;
+  bottom: 40px;
+  width: 700px;
+  left: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.panel-control .tr {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fafaf6;
+}
+
+.panel-control .tr:hover i {
+  -webkit-transform: scale(0.7) rotate(23deg);
+          transform: scale(0.7) rotate(23deg);
+}
+
+.panel-control .tr i {
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  color: #fafaf6 !important;
+}
+
+.restart {
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.restart.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.restart:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.panel-control {
+  background-color: rgba(34, 96, 137, 0.8);
+  border-radius: 10px;
+  border: 2px solid white;
+  -webkit-box-shadow: 10px 10px 10px rgba(93, 93, 90, 0.5), -5px -5px 10px rgba(73, 73, 71, 0.5);
+          box-shadow: 10px 10px 10px rgba(93, 93, 90, 0.5), -5px -5px 10px rgba(73, 73, 71, 0.5);
+}
+
+.panel-control i {
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.panel-control .tombol {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel-control .tombol:hover i {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.panel-control .tombol i {
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  color: #fafaf6;
+}
+
+.ct-petunjuk {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.petunjuk {
+  border-radius: 20px !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px);
+  /* border-radius: 10px; */
+}
+/*# sourceMappingURL=main.css.map */
